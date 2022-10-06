@@ -18,17 +18,33 @@ produits présents en session. Elle doit également présenter le total de l'ens
 <body>
     
    <?php
-   
+
     /* Nous rajoutons une condition qui vérifie :
     Soit la clé "products" du tableau de session $_SESSION n'existe pas : !isset()
     Soit cette clé existe mais ne contient aucune donnée : empty()*/
     if (!isset($_SESSION[" products "])|| empty ( $_SESSION["products"])){
         echo "<p> Aucun produit en session ...</p>";
     }
-    else{
+    else{ 
 
+        /* De la ligne 31 à la ligne 44, nous trouvons les balises HTML initialisant correctement un tableau HTML avec une ligne d'en-têtes <thead>, afin de bien décomposer les données de chaque produit. */
+        echo "<table>",
+                "<thead>",
+                " <tr>",
+                    "<th>#</th>",
+                    "<th>Nom</th>",
+                    "<th>Prix</th>",
+                    "<th>Quanité</th>",
+                    "<th>Total</th>",
+                    "</tr>",
+                "</thead>",
+            "</table>";
+        foreach($_SESSION["products"] as $index => $product) {
+
+        }
     }
-
+    echo "</thody>",
+        "</table>";
    ?>
 
 </body>
