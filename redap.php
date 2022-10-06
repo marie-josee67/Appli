@@ -37,26 +37,39 @@ produits présents en session. Elle doit également présenter le total de l'ens
                         "<th>Quanité</th>",
                         "<th>Total</th>",
                     "</tr>",
-            "</table>",
+                "</thead>",
             "<tbody>";
-/* La boucle itérative foreach(), particulièrement efficace pour exécuter, produit par produit, les mêmes instructions qui vont permettre l'affichage uniforme de chacun d'entre eux. Pour chaque donnée dans $_SESSION['products'], nous disposerons au sein de la boucle de deux variables :
 
-$index : aura pour valeur l'index du tableau $_SESSION['products'] parcouru. Nous pourrons numéroter ainsi chaque produit avec ce numéro dans le tableau HTML (en première colonne).
+        /* Dans un premier temps, avant la boucle, on initialise une nouvelle variable $totalGeneral à zéro. */
+        $totalGeneral = 0;
 
-$product : cette variable contiendra le produit, sous forme de tableau, tel que l'a créé et stocké en session le fichier traitement.php. */
+        /* La boucle itérative foreach(), particulièrement efficace pour exécuter, produit par produit, les mêmes instructions qui vont permettre l'affichage uniforme de chacun d'entre eux. Pour chaque donnée dans $_SESSION['products'], nous disposerons au sein de la boucle de deux variables :
+
+        $index : aura pour valeur l'index du tableau $_SESSION['products'] parcouru. Nous pourrons numéroter ainsi chaque produit avec ce numéro dans le tableau HTML (en première colonne).
+
+        $product : cette variable contiendra le produit, sous forme de tableau, tel que l'a créé et stocké en session le fichier traitement.php. */
 
         foreach($_SESSION["products"] as $index => $product) {
             echo "<tr>",
-                "<td>".$index."</td>",
-                "<td>".$product["name"]."</td>",
-                /* La fonction PHP number_format() permet de modifier l'affichage d'une valeur numérique en précisant plusieurs paramètres. En ajoutant avant la fermeture de la balise <td> un symbole €, nos montants s'affichent en euro */
-                "<td>".number_format($product["price"], 2, ",", "&nbsp;")."&nbsp;€</td>",
-                "<td>".$product["qtt"]."</td>",
-                "<td>".number_format($product["total"], 2, ",", "&nbsp;")."&nbsp;€</td>",
+                    "<td>".$index."</td>",
+                    "<td>".$product["name"]."</td>",
+                    /* La fonction PHP number_format() permet de modifier l'affichage d'une valeur numérique en précisant plusieurs paramètres. En ajoutant avant la fermeture de la balise <td> un symbole €, nos montants s'affichent en euro */
+                    "<td>".number_format($product["price"], 2, ",", "&nbsp;")."&nbsp;€</td>",
+                    "<td>".$product["qtt"]."</td>",
+                    "<td>".number_format($product["total"], 2, ",", "&nbsp;")."&nbsp;€</td>",
                 "</tr>";
+            
+            /* À l'intérieur de la boucle, grâce à l'opérateur combiné +=, on ajoute le total du produit parcouru à la valeur de $totalGeneral, qui augmente d'autant pour chaque produit. */
+            $totalGeneral+= $product["total"];
+
         }
-        echo "</thody>",
-        "</table>";
+
+        /* Lignes 68 à 71 : Une fois la boucle terminée, nous affichons une dernière ligne avant de refermer notre tableau. Cette ligne contient deux cellules : une cellule fusionnée de 4 cellules (colspan=4) pour l'intitulé, et une cellule affichant le contenu formaté de $totalGeneral avec number_format(). */
+        echo "<tr>",
+                "<td colspan=4>Totalgénéral : </td>",
+                "<td> <strong>".number_format($totalGeneral, 2, ",", "&nbsp;")."&nbsp;€</strong></td>",
+            "</tr>",
+        "</thody>";
     }
    ?>
 
