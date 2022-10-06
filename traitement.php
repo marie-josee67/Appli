@@ -12,7 +12,19 @@
 
         /* Permet de vérifier si les filtres on fonctionner */
         if($name && $price && $qtt){
+            /* Tableau associatif pour chaque produit $product */
+            $production =[
+                "name"   =>  $name,
+                "price"  =>  $price,
+                "qtt"    =>  $qtt,
+                "total"  =>  $sprice*$qtt
+            ];
 
+            /*  Cette ligne est particulièrement efficace car :
+            1° On sollicite le tableau de session $_SESSION fourni par PHP: 
+            2° On indique la clé "products" de ce tableau. Si cette clé n'existait pas auparavant (ex: l'utilisateur ajoute son tout premier produit), PHP la créera au sein de $_SESSION. 
+            3° Les deux crochets "[]"2 sont un raccourci pour indiquer à cet emplacement que nous ajoutons une nouvelle entrée au futur tableau "products" associé à cette clé. $_SESSION["products"] doit être lui aussi un tableau afin d'y stocker de nouveaux produits par la suite. */
+            $_SESSION["products"][] = $product;
         }
     }
 
