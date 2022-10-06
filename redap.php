@@ -27,24 +27,31 @@ produits présents en session. Elle doit également présenter le total de l'ens
     }
     else{ 
 
-        /* De la ligne 31 à la ligne 44, nous trouvons les balises HTML initialisant correctement un tableau HTML avec une ligne d'en-têtes <thead>, afin de bien décomposer les données de chaque produit. */
+        /* De la ligne 31 à la ligne 41, nous trouvons les balises HTML initialisant correctement un tableau HTML avec une ligne d'en-têtes <thead>, afin de bien décomposer les données de chaque produit. */
         echo "<table>",
                 "<thead>",
-                " <tr>",
-                    "<th>#</th>",
-                    "<th>Nom</th>",
-                    "<th>Prix</th>",
-                    "<th>Quanité</th>",
-                    "<th>Total</th>",
+                    "<tr>",
+                        "<th>#</th>",
+                        "<th>Nom</th>",
+                        "<th>Prix</th>",
+                        "<th>Quanité</th>",
+                        "<th>Total</th>",
                     "</tr>",
-                "</thead>",
-            "</table>";
+            "</table>",
+            "<tbody>";
+            
+/* La boucle itérative foreach(), particulièrement efficace pour exécuter, produit par produit, les mêmes instructions qui vont permettre l'affichage uniforme de chacun d'entre eux. Pour chaque donnée dans $_SESSION['products'], nous disposerons au sein de la boucle de deux variables :
+
+$index : aura pour valeur l'index du tableau $_SESSION['products'] parcouru. Nous pourrons numéroter ainsi chaque produit avec ce numéro dans le tableau HTML (en première colonne).
+
+$product : cette variable contiendra le produit, sous forme de tableau, tel que l'a créé et stocké en session le fichier traitement.php. */
+
         foreach($_SESSION["products"] as $index => $product) {
 
         }
-    }
-    echo "</thody>",
+        echo "</thody>",
         "</table>";
+    }
    ?>
 
 </body>
