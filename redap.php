@@ -44,7 +44,7 @@
                 
                 "<tbody>";
                 
-                /* session_destroy(); enlève tous se qui est stocker en session peut être mis n'importe ou sauf dans une boucle ou fonction*/
+                 /*session_destroy(); /*enlève tous se qui est stocker en session peut être mis n'importe ou sauf dans une boucle ou fonction*/
 
         /* Dans un premier temps, avant la boucle, on initialise une nouvelle variable $totalGeneral à zéro. */
         $totalGeneral = 0;
