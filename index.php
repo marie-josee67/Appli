@@ -13,6 +13,13 @@
     
 <!-- Présentera un formulaire permettant de renseigner : le nom du produit, son prix unitaire, la quantité désirée -->
     <div id="container">
+        <nav class="menu">
+            <ul> <!-- liste d'éléments sans ordre particulier  -->
+                <li class="AjoutProduit"><a href="#index">Ajout de produits</a></li> <!-- liens vers la page-->
+                <li class="recapitulatif"><a href="#redap">Panier</a></li>
+            </ul>
+        </nav>
+
         <div class ="AjoutProduit">
             <h1>Ajouter un produit</h1>
             <form action="traitement.php" method="post">  <!-- action (qui indique la cible du formulaire, le fichier à atteindre lorsque l'utilisateur soumettra le formulaire) method (qui précise par quelle méthode HTTP les données du formulaire seront transmises au serveur) -->

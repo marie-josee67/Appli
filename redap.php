@@ -20,6 +20,7 @@
 <body>
      <!-- liens entre deux page php -->
     <a href="index.php"></a>
+    
     <div id ="recapitulatif">
         <?php
             /* Vérification du tableau qu'il contien bien des informations  =>  <?php var_dump($_SESSION); ?> */
