@@ -1,10 +1,11 @@
-<!-- recap.php devra nous permettre d'afficher de manière organisée et exhaustive la liste des 
-produits présents en session. Elle doit également présenter le total de l'ensemble de ceux-ci. -->
+<!--  Affichera tous les produits en session (et en détail) et présentera le total général de tous les produits ajoutés.-->
 
 
 <?php
     /* A la différence d'index.php, nous aurons besoin ici de parcourir le tableau de session, il est donc nécessaire d'appeler la fonction session_start() en début de fichier afin de récupérer, la session correspondante à l'utilisateur. */
     session_start();
+     /*var_dump($_SESSION);
+     die;  arrête le programme*/
 
 ?>
 <!DOCTYPE html>
@@ -16,18 +17,18 @@ produits présents en session. Elle doit également présenter le total de l'ens
     <title>Récapitulatif des produits</title>
 </head>
 <body>
-    
-   <?php
+    <?php
+    /* Vérification du tableau qu'il contien bien des informations  =>  <?php var_dump($_SESSION); ?> */
 
     /* Nous rajoutons une condition qui vérifie :
     Soit la clé "products" du tableau de session $_SESSION n'existe pas : !isset()
     Soit cette clé existe mais ne contient aucune donnée : empty()*/
-    if (!isset($_SESSION[" products "])|| empty ( $_SESSION["products"])){
+    if (!isset($_SESSION["products"])|| empty ( $_SESSION["products"])){
         echo "<p> Aucun produit en session ...</p>";
     }
     else{ 
 
-        /* De la ligne 31 à la ligne 41, nous trouvons les balises HTML initialisant correctement un tableau HTML avec une ligne d'en-têtes <thead>, afin de bien décomposer les données de chaque produit. */
+        /* De la ligne 30 à la ligne 40, nous trouvons les balises HTML initialisant correctement un tableau HTML avec une ligne d'en-têtes <thead>, afin de bien décomposer les données de chaque produit. */
         echo "<table>",
                 "<thead>",
                     "<tr>",
@@ -38,7 +39,10 @@ produits présents en session. Elle doit également présenter le total de l'ens
                         "<th>Total</th>",
                     "</tr>",
                 "</thead>",
-            "<tbody>";
+                
+                "<tbody>";
+                
+                /* session_destroy(); enlève tous se qui est stocker en session peut être mis n'importe ou sauf dans une boucle ou fonction*/
 
         /* Dans un premier temps, avant la boucle, on initialise une nouvelle variable $totalGeneral à zéro. */
         $totalGeneral = 0;
