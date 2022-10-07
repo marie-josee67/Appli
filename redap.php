@@ -16,6 +16,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Récapitulatif des produits</title>
+    <style>
+      table,
+      td,
+      th {
+        padding: 10px;
+        border: 2px solid #1c87c9;
+        background-color: #e5e5e5;
+        text-align: center;
+      }
+    </style>
 </head>
 <body>
     <div id ="recapitulatif">
