@@ -58,24 +58,24 @@
                 $product : cette variable contiendra le produit, sous forme de tableau, tel que l'a créé et stocké en session le fichier traitement.php. */
 
                 foreach($_SESSION["products"] as $index => $product) {
-                    echo "<tr class='foreach'>",
-                            "<td>".$index."</td>",
+                    echo "<tr class='interieur'>",
+                            "<td class='nombre'>".$index."</td>",
                             "<td class='designation'>".$product["name"]."</td>",
                             /* La fonction PHP number_format() permet de modifier l'affichage d'une valeur numérique en précisant plusieurs paramètres. En ajoutant avant la fermeture de la balise <td> un symbole €, nos montants s'affichent en euro */
-                            "<td>".number_format($product["price"], 2, ",", "&nbsp;")."&nbsp;€</td>",
-                            "<td>".$product["qtt"]."</td>",
-                            "<td>".number_format($product["total"], 2, ",", "&nbsp;")."&nbsp;€</td>",
+                            "<td class='prix'>".number_format($product["price"], 2, ",", "&nbsp;")."&nbsp;€</td>",
+                            "<td class='quantiter'>".$product["qtt"]."</td>",
+                            "<td class='total'>".number_format($product["total"], 2, ",", "&nbsp;")."&nbsp;€</td>",
                         "</tr>";
-                    
+                   
                     /* À l'intérieur de la boucle, grâce à l'opérateur combiné +=, on ajoute le total du produit parcouru à la valeur de $totalGeneral, qui augmente d'autant pour chaque produit. */
-                    $totalGeneral+= $product["total"];
+                    "<br>";$totalGeneral+= $product["total"];
 
                 }
 
                 /* Lignes 68 à 71 : Une fois la boucle terminée, nous affichons une dernière ligne avant de refermer notre tableau. Cette ligne contient deux cellules : une cellule fusionnée de 4 cellules (colspan=4) pour l'intitulé, et une cellule affichant le contenu formaté de $totalGeneral avec number_format(). */
                 echo "<tr>",
                         "<td colspan=4>Totalgénéral : </td>",
-                        "<td> <strong>".number_format($totalGeneral, 2, ",", "&nbsp;")."&nbsp;€</strong></td>",
+                        "<td class='general'> <strong>".number_format($totalGeneral, 2, ",", "&nbsp;")."&nbsp;€</strong></td>",
                     "</tr>",
                 "</thody>";
             }
