@@ -4,6 +4,7 @@
     box-sizing: border-box;
     
 }
+/*--------------------------------------- index.php ----------------------------------- */
 #container {
     display:flex ;
     flex-wrap: wrap;
@@ -22,6 +23,7 @@
     font-size: 20px;
     /*border: 1px solid goldenrod;*/
 }
+
 h1{
     font-size: 40px;
     color:#f1f1f1;
@@ -33,26 +35,52 @@ p{
     margin: 20px;
     /*border: 1px solid rgb(35, 32, 218);*/
 }
+
 /* comprend toutes les casses à remplir */
 input{
     font-size: 20px;
 }
 
-#table {
+/*--------------------------------------- redap.php ----------------------------------- */
+
+/*-----------------------------------------   if   ------------------------------------ */
+
+#recapitulatif{
+    display:flex ;
+    flex-wrap: wrap;
     height: 100vh;
     width: 100vw;
-    font-size: 20px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    background-color: rgba(68, 117, 136, 0.548);
+    border: 5px solid rgb(218, 137, 32);
+}
+
+#table {
+    width: auto;
+    height: fit-content; /* La plus grande des valeurs entre :La hauteur minimale intrinsèque. Et le minimum entre la hauteur intrinsèque préférrée et la hauteur disponible */
+    font-size: 20px;
+    text-align: right;
     background: rgb(211, 191, 191);
     border: 5px solid rgb(157, 30, 30);
 }
+
 #tableau {
-    height: 500px;
-    width: 500px;
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
     border: 2px solid rgb(166, 122, 29);
 }
+
+/*  premet de mettre les noms de produits du coter gauche */
+.designation{
+    text-align: left;
+}
+
+/*---------------------------------------   Foreach   ------------------------------------ */
 
 .foreach{
     border: 2px solid blue;
