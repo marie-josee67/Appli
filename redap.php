@@ -18,10 +18,12 @@
     <title>Récapitulatif des produits</title>
 </head>
 <body>
-     <!-- liens entre deux page php -->
-    <a href="index.php"></a>
-    
     <div id ="recapitulatif">
+        <nav class="menu">
+                <ul> <!-- liste d'éléments sans ordre particulier  -->
+                    <li class="Produits"><a href="index.php">Produits</a></li> <!-- liens vers la page-->
+                </ul>
+            </nav>
         <?php
             /* Vérification du tableau qu'il contien bien des informations  =>  <?php var_dump($_SESSION); ?> */
 

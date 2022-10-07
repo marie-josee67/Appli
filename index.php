@@ -8,15 +8,12 @@
     <title>Ajout produit</title>
 </head>
 <body>
-    <!-- liens entre deux page php -->
-    <a href="redap.php"></a>
     
 <!-- Présentera un formulaire permettant de renseigner : le nom du produit, son prix unitaire, la quantité désirée -->
     <div id="container">
         <nav class="menu">
             <ul> <!-- liste d'éléments sans ordre particulier  -->
-                <li class="AjoutProduit"><a href="#index">Ajout de produits</a></li> <!-- liens vers la page-->
-                <li class="recapitulatif"><a href="#redap">Panier</a></li>
+                <li class="recapitulatif"><a href="redap.php">Panier</a></li> <!-- liens vers la page-->
             </ul>
         </nav>
 
