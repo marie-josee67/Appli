@@ -8,7 +8,9 @@
     <title>Ajout produit</title>
 </head>
 <body>
-
+    <!-- liens entre deux page php -->
+    <a href="redap.php"></a>
+    
 <!-- Présentera un formulaire permettant de renseigner : le nom du produit, son prix unitaire, la quantité désirée -->
     <div id="container">
         <div class ="AjoutProduit">

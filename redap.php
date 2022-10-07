@@ -18,7 +18,9 @@
     <title>Récapitulatif des produits</title>
 </head>
 <body>
-    
+     <!-- liens entre deux page php -->
+    <a href="index.php"></a>
+
     <?php
     /* Vérification du tableau qu'il contien bien des informations  =>  <?php var_dump($_SESSION); ?> */
 
@@ -31,9 +33,9 @@
     else{ 
 
         /* De la ligne 30 à la ligne 40, nous trouvons les balises HTML initialisant correctement un tableau HTML avec une ligne d'en-têtes <thead>, afin de bien décomposer les données de chaque produit. */
-        echo "<table>",
+        echo "<table id ='table'>",
                 "<thead>",
-                    "<tr>",
+                    "<tr id ='tableau'>",
                         "<th>#</th>",
                         "<th>Nom</th>",
                         "<th>Prix</th>",
@@ -56,7 +58,7 @@
         $product : cette variable contiendra le produit, sous forme de tableau, tel que l'a créé et stocké en session le fichier traitement.php. */
 
         foreach($_SESSION["products"] as $index => $product) {
-            echo "<tr>",
+            echo "<tr class='foreach'>",
                     "<td>".$index."</td>",
                     "<td>".$product["name"]."</td>",
                     /* La fonction PHP number_format() permet de modifier l'affichage d'une valeur numérique en précisant plusieurs paramètres. En ajoutant avant la fermeture de la balise <td> un symbole €, nos montants s'affichent en euro */

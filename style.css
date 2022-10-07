@@ -10,8 +10,8 @@
     height: 100vh;
     width: 100vw;
     background-color: rgba(68, 117, 136, 0.548);
+    border: 5px solid rgb(218, 137, 32);
 }
-
 
 .AjoutProduit{
     height: 100vh;
@@ -36,4 +36,24 @@ p{
 /* comprend toutes les casses à remplir */
 input{
     font-size: 20px;
+}
+
+#table {
+    height: 100vh;
+    width: 100vw;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(211, 191, 191);
+    border: 5px solid rgb(157, 30, 30);
+}
+#tableau {
+    height: 500px;
+    width: 500px;
+    border: 2px solid rgb(166, 122, 29);
+}
+
+.foreach{
+    border: 2px solid blue;
 }
