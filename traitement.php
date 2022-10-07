@@ -12,7 +12,7 @@
         /* Nous devons alors vérifier l'intégrité des valeurs transmises dans le tableau $_POST en fonction de celles que nous attendons réellement : */
         $name = filter_input(INPUT_POST, "name", FILTER_SANITIZE_SPECIAL_CHARS);
         $price = filter_input(INPUT_POST, "price", FILTER_VALIDATE_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
-        $qtt = filter_input(INPUT_POST, "qtt", FILTER_VALIDATE_INT);
+        $qtt = filter_input(INPUT_POST, "qtt", FILTER_VALIDATE_INT); /* filtre input permet d'éviter que quelqu'un inject du code */
 
         /* Permet de vérifier si les filtres on fonctionner */
         if($name && $price && $qtt){

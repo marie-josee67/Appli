@@ -7,25 +7,29 @@
 #contaigner{
     display:flex ;
     flex-wrap: wrap;
-    min-height: 100vh;
-    background: rgb(138, 200, 102);
+    height: 100vh;
+    width: 100vw;
+    background: rgb(92, 14, 14);
 }
-
-h1{
-    font-size: 40px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color:blueviolet;
-    background: rgb(67, 216, 112);
-    border:1px solid red;
-}
-
-p{
+.AjoutProduit{
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 20px;
+    /*border: 1px solid goldenrod;*/
+    
+}
+h1{
+    font-size: 40px;
+    color:#f1f1f1;
+    background: rgb(9, 127, 45);
+    /*border:1px solid red;*/
+}
+
+p{
     margin: 20px;
-    border: 1px solid goldenrod;
+    /*border: 1px solid rgb(35, 32, 218);*/
+}
+input{
+    font-size: 20px;
 }
