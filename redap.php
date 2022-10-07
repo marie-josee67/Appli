@@ -16,6 +16,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Récapitulatif des produits</title>
+
+    <!-- Bordures du tableau et sont fond colorer -->
     <style>
       table,
       td,
@@ -26,6 +28,7 @@
         text-align: center;
       }
     </style>
+
 </head>
 <body>
     <div id ="recapitulatif">

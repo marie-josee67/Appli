@@ -4,13 +4,41 @@
     box-sizing: border-box;
     
 }
+
+:root{
+
+    /* couleurs mode clair */
+    --clr-light: #f1f1f1;
+    --clr-dark: #ececec;
+    --clr-nav:  rgba(68, 117, 136, 0.548);
+
+    --clr-texte1:  #000000;;
+    --clr-texte2: #f1f1f1;
+
+    --clr-accent2: #3f1778;
+}
+
+body.dark{
+
+    /*   couleurs mode sombre*/
+
+    --clr-light: #4d0019;
+    --clr-dark:  #330011;
+    --clr-nav: #18181f;
+
+    --clr-texte1: #f1f1f1;
+    --clr-texte2: #000000;
+
+    --clr-accent2: #420000;
+}
+
 /*--------------------------------------- index.php ----------------------------------- */
 #container {
     display:flex ;
     flex-wrap: wrap;
     height: 100vh;
     width: 100vw;
-    background-color: rgba(68, 117, 136, 0.548);
+    background-color: var(--clr-nav);
     border: 5px solid rgb(218, 137, 32);
 }
 
@@ -19,8 +47,28 @@
     width: 100vw;
     text-align: center;
     font-size: 30px;
-    background-color: #f1f1f1;
-    border: 5px solid rgb(156, 33, 105);
+    background-color: var(--clr-light);
+    /*border: 5px solid rgb(156, 33, 105);*/
+}
+/* -----------------------------------B outon Mode Sombre -------------------------- */
+
+.btn-toggle{
+    position: fixed;
+    top:50px;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    z-index: 5;
+    border-radius: 50%;
+    background:var(--clr-texte1);
+    color:var(--clr-texte2);
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+
 }
 
 /*------------------------- formulaire d'ajout de produits -------------------------- */
@@ -36,8 +84,8 @@
 
 h1{
     font-size: 40px;
-    color:#f1f1f1;
-    background: rgb(9, 127, 45);
+    color: var(--clr-texte2);
+    background-color: var(--clr-accent2);
     /*border:1px solid red;*/
 }
 
@@ -56,14 +104,14 @@ input{
 /*-----------------------------------------   if   ------------------------------------ */
 
 #recapitulatif{
-    display:flex ;
+    display: flex;
     flex-wrap: wrap;
     height: 100vh;
     width: 100vw;
     justify-content: center;
     align-items: center;
     background-color: rgba(68, 117, 136, 0.548);
-    border: 5px solid rgb(218, 137, 32);
+    /*border: 5px solid rgb(218, 137, 32);*/
 }
 
 #table {
@@ -74,7 +122,7 @@ input{
     font-size: 20px;
     text-align: right;
     padding:5px;
-    background: rgb(211, 191, 191);
+    background-color: var(--clr-nav);
     border-collapse: collapse;
     margin:5px;
    /* border: 2px solid rgb(157, 30, 30);*/
@@ -85,8 +133,8 @@ input{
     text-align: center;
     justify-content: center;
     align-items: center;
-    background: #f1f1f1;
-    border: 1px solid rgb(166, 122, 29);
+    background-color: var(--clr-texte2);
+    /*border: 1px solid rgb(166, 122, 29);*/
 }
 
 /*  premet de mettre les noms de produits du coter gauche */
