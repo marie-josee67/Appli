@@ -48,8 +48,10 @@
         </div>
     </div>
 
-    <!----------------------------------------- BOUTON DARK MODE ----------------------------------------->
-    <div class="btn-toggle">Go Dark</div>
+    <!----------------------------------------- Bouton mode Sombre ----------------------------------------->
+    <div class="btn-toggle">
+        <i class="fa-solid fa-moon-stars"></i>
+</div>
 
     <!----------------------------------------- fichier JS ----------------------------------------->
     <script src="./ModeSombre.js"></script>

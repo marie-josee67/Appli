@@ -50,7 +50,7 @@ body.dark{
     background-color: var(--clr-light);
     /*border: 5px solid rgb(156, 33, 105);*/
 }
-/* -----------------------------------B outon Mode Sombre -------------------------- */
+/* -----------------------------------Bouton Mode Sombre -------------------------- */
 
 .btn-toggle{
     position: fixed;

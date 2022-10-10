@@ -7,13 +7,13 @@ btnToggle.addEventListener("click",( ) => {
     if(body.classList.contains("dark")){
         body.classList.add("light")
         body.classList.remove("dark")
-        btnToggle.innerphp = "Go Dark"
+        btnToggle.innerPhp = "Go Dark"
     }
 
         else if(body.classList.contains("light")){
             body.classList.add("dark")
             body.classList.remove("light")
-            btnToggle.innerphp = "Go Light"
+            btnToggle.innerPhp = "Go Light"
             
         }
 })

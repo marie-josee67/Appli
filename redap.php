@@ -90,7 +90,7 @@
 
                 /* Lignes 68 à 71 : Une fois la boucle terminée, nous affichons une dernière ligne avant de refermer notre tableau. Cette ligne contient deux cellules : une cellule fusionnée de 4 cellules (colspan=4) pour l'intitulé, et une cellule affichant le contenu formaté de $totalGeneral avec number_format(). */
                 echo "<tr>",
-                        "<td colspan=4>Totalgénéral : </td>",
+                        "<td colspan=4>Total général : </td>",
                         "<td class='general'> <strong>".number_format($totalGeneral, 2, ",", "&nbsp;")."&nbsp;€</strong></td>",
                     "</tr>",
                 "</thody>";
