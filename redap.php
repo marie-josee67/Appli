@@ -93,7 +93,6 @@
                         
                         /* Dans un premier temps, avant la boucle, on initialise une nouvelle variable $totalGeneral à zéro. */
                         $totalGeneral = 0;
-                        $totalProduit = $product["qtt"]+ $product ["qtt"], i++;
                         
                         /* La boucle itérative foreach(), particulièrement efficace pour exécuter, produit par produit, les mêmes instructions qui vont permettre l'affichage uniforme de chacun d'entre eux. Pour chaque donnée dans $_SESSION['products'], nous disposerons au sein de la boucle de deux variables :
 
@@ -110,7 +109,6 @@
                             "<td class='quantiter'>".$product["qtt"]."</td>",
                             "<td class='total'>".number_format($product["total"], 2, ",", "&nbsp;")."&nbsp;€</td>",
                             "</tr>";
-                            "<br>" echo $totalProduit ; 
                             /* À l'intérieur de la boucle, grâce à l'opérateur combiné +=, on ajoute le total du produit parcouru à la valeur de $totalGeneral, qui augmente d'autant pour chaque produit. */
                             "<br>";$totalGeneral+= $product["total"];
                             
@@ -121,9 +119,12 @@
                         "<td class='general'> <strong>".number_format($totalGeneral, 2, ",", "&nbsp;")."&nbsp;€</strong></td>",
                         "</tr>",
                         "</thody>";
-                    }
-                
-        ?>
+                    } 
+                    /* bouton pour supprimer les produits du panier */
+                    ?>
+                    <div class ="boutonPanier">
+                        <a href= "traitement.php?action=deleteAll"><i class="fa fa-trash" aria-hidden="true"></i> Vider le panier</a>
+                    </div>
    </div>
 
 </body>

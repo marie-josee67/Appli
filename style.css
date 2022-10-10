@@ -546,3 +546,8 @@ input:hover {
 .general{
     padding: 10px;
 }
+
+ /* -------------------------------------- bouton panier -------------------------------------*/
+.boutonPanier{
+    z-index: 4;
+}
