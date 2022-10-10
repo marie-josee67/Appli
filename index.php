@@ -8,7 +8,49 @@
     <title>Ajout produit</title>
 </head>
 <body>
-    
+<!--------------------------------------- fond d'écran ------------------------------->
+<divclass="fonddEcran">
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+  </div>
 <!-- Présentera un formulaire permettant de renseigner : le nom du produit, son prix unitaire, la quantité désirée -->
     <div id="container">
         <nav class="menu">
@@ -48,10 +90,10 @@
         </div>
     </div>
 
-    <!----------------------------------------- Bouton mode Sombre ----------------------------------------->
+    <!----------------------------------------- Bouton mode Sombre ---------------------------------------
     <div class="btn-toggle">
         <i class="fa-solid fa-moon-stars"></i>
-</div>
+</div>-->
 
     <!----------------------------------------- fichier JS ----------------------------------------->
     <script src="./ModeSombre.js"></script>
@@ -69,5 +111,7 @@ Chrome Devtools : Onglet Network
 https://www.youtube.com/watch?v=y4MpceWoeCY
 
 https://fr.w3docs.com/snippets/html/comment-ajouter-une-bordure-a-un-tableau-html.html#:~:text=Créer%20une%20Bordure%20Pour%20un%20Tableau%20HTML&text=L%27élément%20a,de%20votre%20tableau.                bordures pour tableaux
+
+https://alvarotrigo.com/blog/animated-backgrounds-css/
 
  -->

@@ -1,4 +1,4 @@
-const btnToggle = document.querySelector(".btn-toggle");
+/*const btnToggle = document.querySelector(".btn-toggle");
 const body=document.querySelector("body");
 
 btnToggle.addEventListener("click",( ) => {
@@ -16,4 +16,4 @@ btnToggle.addEventListener("click",( ) => {
             btnToggle.innerPhp = "Go Light"
             
         }
-})
+})*/
