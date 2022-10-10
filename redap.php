@@ -14,6 +14,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Lien CSS Font Awesome (icônes) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Récapitulatif des produits</title>
 
@@ -73,7 +75,7 @@
             Soit la clé "products" du tableau de session $_SESSION n'existe pas : !isset()
             Soit cette clé existe mais ne contient aucune donnée : empty()*/
             if (!isset($_SESSION["products"])|| empty ( $_SESSION["products"])){
-                echo "<p> Aucun produit en session ...</p>";
+                echo '<span style="color:#FFFFFF;">'.'Aucun produit en session ...'.'</span>';
             }
             else{ 
 
@@ -124,8 +126,7 @@
                     /* bouton pour supprimer les produits du panier */
                     ?>
                     <div class ="boutonPanier">
-                        <a href= "traitement.php?action=deleteAll"><i class="fa-duotone fa-cauldron"></i> Vider le panier</a>
-                        <a href="index2.php" onclick="<?php session_unset(); ?>">
+                        <a href= "traitement.php?action=deleteAll"><i class="fa-duotone fa-cauldron"></i> '<span style="color:#FFFFFF;">Vider le panier</span>'</a>;
                     </div>
    </div>
 
