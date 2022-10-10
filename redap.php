@@ -123,7 +123,7 @@
                     /* bouton pour supprimer les produits du panier */
                     ?>
                     <div class ="boutonPanier">
-                        <a href= "traitement.php?action=deleteAll"><i class="fa fa-trash" aria-hidden="true"></i> Vider le panier</a>
+                        <a href= "traitement.php?action=deleteAll"><i class="fa-duotone fa-cauldron"></i> Vider le panier</a>
                     </div>
    </div>
 
