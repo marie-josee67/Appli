@@ -55,7 +55,7 @@ body{
     i:nth-child(1){
       top:20px;
       left:30px;
-        background: -webkit-radial-gradient(center, ellipse cover,  rgba(2,226,252,0.65) 0%,rgba(0,0,0,0) 100%);
+      background: -webkit-radial-gradient(center, ellipse cover,  rgba(2,226,252,0.65) 0%,rgba(0,0,0,0) 100%);
       box-shadow:0px 0px 5px 0px #02e2fc;
       animation-duration: 5s;
     }
@@ -408,11 +408,11 @@ body{
 #container {
     display:flex ;
     flex-wrap: wrap;
-    z-index: 1;
+    z-index: 1;/* passe devant le numéro 0  */
     height: 100vh;
     width: 100vw;
     color: #f1f1f1;
-    border: 5px solid rgb(218, 137, 32);
+    /*border: 5px solid rgb(218, 137, 32);*/
 }
 
 /*--------------------------------------- Nav bar ----------------------------------- */
@@ -420,10 +420,10 @@ body{
     width: 100vw;
     text-align: center;
     font-size: 30px;
-    background-color: var(--clr-light);
+    z-index: 3;
     /*border: 5px solid rgb(156, 33, 105);*/
 }
-/* -----------------------------------Bouton Mode Sombre -------------------------- */
+/* -----------------------------------Bouton Mode Sombre -------------------------- 
 
 .btn-toggle{
     position: fixed;
@@ -442,12 +442,13 @@ body{
     text-align: center;
     cursor: pointer;
 
-}
+}*/
 
 /*------------------------- formulaire d'ajout de produits -------------------------- */
 .AjoutProduit{
     height: 100vh;
     width: 100vw;
+    z-index: 2;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -466,9 +467,16 @@ p{
     /*border: 1px solid rgb(35, 32, 218);*/
 }
 
-/* comprend toutes les casses à remplir */
+/* comprend toutes les casses à remplir effet bleuté avec le curseur*/
 input{
     font-size: 20px;
+    color: #090a0a;
+    box-shadow: 0 0 40px 40px #e8e8ee inset, 0 0 0 0 #e3e3ed;
+    transition: all 150ms ease-in-out;
+    
+}
+input:hover {
+    box-shadow: 0 0 10px 0 #0000FF inset, 0 0 10px 4px #0000FF;
 }
 
 /*--------------------------------------- redap.php ----------------------------------- */
@@ -493,8 +501,9 @@ input{
     font-size: 20px;
     text-align: right;
     padding:5px;
-    background-color: #f1f1f1;
+    color: #0a0909;
     border-collapse: collapse;
+    background:none;
     margin:5px;
    /* border: 2px solid rgb(157, 30, 30);*/
 }

@@ -81,7 +81,7 @@
 </div>-->
 
     <!----------------------------------------- fichier JS ----------------------------------------->
-    <script src="./ModeSombre.js"></script>
+    <!--<script src="./ModeSombre.js"></script>-->
     
 </body>
 </html>
@@ -95,8 +95,13 @@ https://developer.chrome.com/docs/devtools/
 Chrome Devtools : Onglet Network
 https://www.youtube.com/watch?v=y4MpceWoeCY
 
-https://fr.w3docs.com/snippets/html/comment-ajouter-une-bordure-a-un-tableau-html.html#:~:text=Créer%20une%20Bordure%20Pour%20un%20Tableau%20HTML&text=L%27élément%20a,de%20votre%20tableau.                bordures pour tableaux
+https://fr.w3docs.com/snippets/html/comment-ajouter-une-bordure-a-un-tableau-html.html#:~:text=Créer%20une%20Bordure%20Pour%20un%20Tableau%20HTML&text=L%27élément%20a,de%20votre%20tableau.       bordures pour tableaux
 
 https://alvarotrigo.com/blog/animated-backgrounds-css/
+
+
+https://dev.to/webdeasy/top-20-css-buttons-animations-f41
+
+https://www.codeur.com/blog/frameworks-css/
 
  -->
