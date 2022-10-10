@@ -87,17 +87,17 @@
                                 "<th>Total</th>",
                             "</tr>",
                         "</thead>",
-                        
                         "<tbody>";
                         
                         /*session_destroy(); /*enlève tous se qui est stocker en session peut être mis n'importe ou sauf dans une boucle ou fonction*/
+                        
+                        /* Dans un premier temps, avant la boucle, on initialise une nouvelle variable $totalGeneral à zéro. */
+                        $totalGeneral = 0;
+                        $totalProduit = $product["qtt"]+ $product ["qtt"], i++;
+                        
+                        /* La boucle itérative foreach(), particulièrement efficace pour exécuter, produit par produit, les mêmes instructions qui vont permettre l'affichage uniforme de chacun d'entre eux. Pour chaque donnée dans $_SESSION['products'], nous disposerons au sein de la boucle de deux variables :
 
-                /* Dans un premier temps, avant la boucle, on initialise une nouvelle variable $totalGeneral à zéro. */
-                $totalGeneral = 0;
-
-                /* La boucle itérative foreach(), particulièrement efficace pour exécuter, produit par produit, les mêmes instructions qui vont permettre l'affichage uniforme de chacun d'entre eux. Pour chaque donnée dans $_SESSION['products'], nous disposerons au sein de la boucle de deux variables :
-
-                $index : aura pour valeur l'index du tableau $_SESSION['products'] parcouru. Nous pourrons numéroter ainsi chaque produit avec ce numéro dans le tableau HTML (en première colonne).
+                            $index : aura pour valeur l'index du tableau $_SESSION['products'] parcouru. Nous pourrons numéroter ainsi chaque produit avec ce numéro dans le tableau HTML (en première colonne).
 
                 $product : cette variable contiendra le produit, sous forme de tableau, tel que l'a créé et stocké en session le fichier traitement.php. */
 
@@ -109,20 +109,20 @@
                             "<td class='prix'>".number_format($product["price"], 2, ",", "&nbsp;")."&nbsp;€</td>",
                             "<td class='quantiter'>".$product["qtt"]."</td>",
                             "<td class='total'>".number_format($product["total"], 2, ",", "&nbsp;")."&nbsp;€</td>",
-                        "</tr>";
-                   
-                    /* À l'intérieur de la boucle, grâce à l'opérateur combiné +=, on ajoute le total du produit parcouru à la valeur de $totalGeneral, qui augmente d'autant pour chaque produit. */
-                    "<br>";$totalGeneral+= $product["total"];
-
-                }
-
-                /* Lignes 68 à 71 : Une fois la boucle terminée, nous affichons une dernière ligne avant de refermer notre tableau. Cette ligne contient deux cellules : une cellule fusionnée de 4 cellules (colspan=4) pour l'intitulé, et une cellule affichant le contenu formaté de $totalGeneral avec number_format(). */
-                echo "<tr>",
+                            "</tr>";
+                            "<br>" echo $totalProduit ; 
+                            /* À l'intérieur de la boucle, grâce à l'opérateur combiné +=, on ajoute le total du produit parcouru à la valeur de $totalGeneral, qui augmente d'autant pour chaque produit. */
+                            "<br>";$totalGeneral+= $product["total"];
+                            
+                        }
+                        /* Lignes 68 à 71 : Une fois la boucle terminée, nous affichons une dernière ligne avant de refermer notre tableau. Cette ligne contient deux cellules : une cellule fusionnée de 4 cellules (colspan=4) pour l'intitulé, et une cellule affichant le contenu formaté de $totalGeneral avec number_format(). */
+                        echo "<tr>",
                         "<td colspan=4>Total général : </td>",
                         "<td class='general'> <strong>".number_format($totalGeneral, 2, ",", "&nbsp;")."&nbsp;€</strong></td>",
-                    "</tr>",
-                "</thody>";
-            }
+                        "</tr>",
+                        "</thody>";
+                    }
+                
         ?>
    </div>
 
