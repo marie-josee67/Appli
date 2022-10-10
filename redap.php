@@ -31,6 +31,34 @@
 
 </head>
 <body>
+    <!--------------------------------------- fond d'écran ------------------------------->
+<div class="fonddEcran">
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    
+  </div>
     <div id ="recapitulatif">
         <nav class="menu">
                 <ul> <!-- liste d'éléments sans ordre particulier  -->

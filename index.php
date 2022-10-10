@@ -8,50 +8,35 @@
     <title>Ajout produit</title>
 </head>
 <body>
-<!--------------------------------------- fond d'écran ------------------------------->
-<divclass="fonddEcran">
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
-  </div>
-<!-- Présentera un formulaire permettant de renseigner : le nom du produit, son prix unitaire, la quantité désirée -->
+    <!-- Présentera un formulaire permettant de renseigner : le nom du produit, son prix unitaire, la quantité désirée -->
+    <!--------------------------------------- fond d'écran ------------------------------->
+    <div class="fonddEcran">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+      </div>
     <div id="container">
         <nav class="menu">
             <ul> <!-- liste d'éléments sans ordre particulier  -->
