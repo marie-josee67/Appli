@@ -6,7 +6,7 @@
 
     session_start(); /* Cette fonction a deux utilités : démarrer une session sur le serveur pour l'utilisateur courant, ou récupérer la session de ce même utilisateur s'il en avait déjà une. */
     
-    /* Boucle qui permet de proteget le fichier */
+    /* Boucle qui permet de proteger le fichier */
     if (isset($_POST["submit"])){
 
         /* Nous devons alors vérifier l'intégrité des valeurs transmises dans le tableau $_POST en fonction de celles que nous attendons réellement : */

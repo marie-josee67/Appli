@@ -503,8 +503,8 @@ input:hover {
     padding:5px;
     color: #0a0909;
     border-collapse: collapse;
-    background:none;
     margin:5px;
+    background:#f1f1f1;
    /* border: 2px solid rgb(157, 30, 30);*/
 }
 
@@ -513,7 +513,6 @@ input:hover {
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: #f1f1f1;
     /*border: 1px solid rgb(166, 122, 29);*/
 }
 
