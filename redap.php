@@ -58,6 +58,7 @@
     <i></i>
     <i></i>
     
+    
   </div>
     <div id ="recapitulatif">
         <nav class="menu">
@@ -124,6 +125,7 @@
                     ?>
                     <div class ="boutonPanier">
                         <a href= "traitement.php?action=deleteAll"><i class="fa-duotone fa-cauldron"></i> Vider le panier</a>
+                        <a href="index2.php" onclick="<?php session_unset(); ?>">
                     </div>
    </div>
 
