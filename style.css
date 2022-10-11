@@ -212,7 +212,7 @@ input:hover {
 .supprimer{
   color: #0c0808;
   z-index: 4;
-  font-size: 50px;
+  font-size: 30px;
 }
  /* -------------------------------------- bouton panier pour effacer les articles du tableau -------------------------------------*/
 .boutonPanier{

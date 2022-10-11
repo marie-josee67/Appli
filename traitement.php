@@ -45,5 +45,6 @@
         if (isset($_GET['delete'])) {
             delete_all();
         }    
-/*  bouton suppression d'un article du tableau */ 
+        
+    /*  bouton suppression d'un article du tableau */ 
  

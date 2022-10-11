@@ -5,7 +5,7 @@
     /* A la différence d'index.php, nous aurons besoin ici de parcourir le tableau de session, il est donc nécessaire d'appeler la fonction session_start() en début de fichier afin de récupérer, la session correspondante à l'utilisateur. */
     session_start();
      /*var_dump($_SESSION);
-     die;  arrête le programme*/
+     div;  arrête le programme*/
 
 ?>
 <!DOCTYPE html>
@@ -137,6 +137,7 @@
                     ?>
                     <div class ="boutonPanier">
                         <a href= "traitement.php?action=deleteAll"><i class="fa-duotone fa-cauldron"></i> <span style="color:#FFFFFF;">Vider le panier</span></a>;
+                        <a href="redap.php" onclick="<?php session_unset(); ?>">
                     </div>
    </div>
 

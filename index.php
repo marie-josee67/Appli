@@ -11,6 +11,7 @@
 </head>
 <body>
     <!-- Présentera un formulaire permettant de renseigner : le nom du produit, son prix unitaire, la quantité désirée -->
+
     <!--------------------------------------- fond d'écran ------------------------------->
     <div class="fonddEcran">
         <i></i>
@@ -48,11 +49,12 @@
         <i></i>
         <i></i>
         <i></i>
-      </div>
+    </div>
+
     <div id="container">
         <nav class="menu">
-             <!-- liste d'éléments sans ordre particulier (attribut booléen )-->
-                <button class="recapitulatif"><a href="redap.php"><span style="color:#FFFFFF;">Panier</span></a></button> <!-- liens vers la page avec la couleur intégrer directement dans le code car ne marche pas autrement pour le moment refuse la balise parent--> 
+            <!-- liens vers la page avec la couleur intégrer directement dans le code car ne marche pas autrement pour le moment refuse la balise parent--> 
+            <button class="recapitulatif"><a href="redap.php"><span style="color:#FFFFFF;">Panier</span></a></button> 
         </nav>
 
         <div class ="AjoutProduit">
@@ -89,7 +91,7 @@
     <!----------------------------------------- Bouton mode Sombre ---------------------------------------
     <div class="btn-toggle">
         <i class="fa-solid fa-moon-stars"></i>
-</div>-->
+    </div>-->
 
     <!----------------------------------------- fichier JS ----------------------------------------->
     <!--<script src="./ModeSombre.js"></script>-->
