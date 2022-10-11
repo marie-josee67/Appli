@@ -35,7 +35,8 @@
 
     /* Cette fonction envoie un nouvel entête HTTP au client. Attention : l'utilisation de la fonction header() nécessite deux précautions : 1° La page qui l'emploie ne doit pas avoir émis un début de réponse avant header() 2°L'appel de la fonction header() n'arrête pas l'exécution du script courant.*/
     header ("Location:index.php");
-    /*  bouton suppression d'article du tableau */ 
+
+    /*  bouton suppression des articles du tableau */ 
     function delete_all(){
         unset($_SESSION['products']);
         print_r($_SESSION);
@@ -44,3 +45,5 @@
         if (isset($_GET['delete'])) {
             delete_all();
         }    
+/*  bouton suppression d'un article du tableau */ 
+ 

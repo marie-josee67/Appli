@@ -85,6 +85,7 @@
                                 "<th>Prix</th>",
                                 "<th>Quantité</th>",
                                 "<th>Total</th>",
+                                "<th>Suppression</th>",
                             "</tr>",
                         "</thead>",
                         "<tbody>";
@@ -93,6 +94,7 @@
                         
                         /* Dans un premier temps, avant la boucle, on initialise une nouvelle variable $totalGeneral à zéro. */
                         $totalGeneral = 0;
+                        $totalProduit = 0;
                         
                         /* La boucle itérative foreach(), particulièrement efficace pour exécuter, produit par produit, les mêmes instructions qui vont permettre l'affichage uniforme de chacun d'entre eux. Pour chaque donnée dans $_SESSION['products'], nous disposerons au sein de la boucle de deux variables :
 
@@ -108,12 +110,23 @@
                             "<td class='prix'>".number_format($product["price"], 2, ",", "&nbsp;")."&nbsp;€</td>",
                             "<td class='quantiter'>".$product["qtt"]."</td>",
                             "<td class='total'>".number_format($product["total"], 2, ",", "&nbsp;")."&nbsp;€</td>",
+                            "<td class='supprimer'><a href='redap.php?action=deleteAll'><i class='fa-solid fa-trash-can-arrow-up'></i></a></td>", /* icon poubelle <i class='fa-solid fa-trash-can-arrow-up'></i> */
                             "</tr>";
                             /* À l'intérieur de la boucle, grâce à l'opérateur combiné +=, on ajoute le total du produit parcouru à la valeur de $totalGeneral, qui augmente d'autant pour chaque produit. */
+                            "<br>";$totalProduit+= $product["qtt"];
                             "<br>";$totalGeneral+= $product["total"];
                             
                         }
-                        /* Lignes 118 à 121 : Une fois la boucle terminée, nous affichons une dernière ligne avant de refermer notre tableau. Cette ligne contient deux cellules : une cellule fusionnée de 4 cellules (colspan=4) pour l'intitulé, et une cellule affichant le contenu formaté de $totalGeneral avec number_format(). */
+
+                        
+                        /* code pour afficher le nombre de produits dans le tableau */
+                        echo "<tr>",
+                        "<td colspan=3>Total produits : </td>",
+                        "<td class='totalProduit'> $totalProduit</td>",
+                        "</tr>",
+                        "</thody>";
+
+                        /* Lignes 128 à 131 : Une fois la boucle terminée, nous affichons une dernière ligne avant de refermer notre tableau. Cette ligne contient deux cellules : une cellule fusionnée de 4 cellules (colspan=4) pour l'intitulé, et une cellule affichant le contenu formaté de $totalGeneral avec number_format(). */
                         echo "<tr>",
                         "<td colspan=4>Total général : </td>",
                         "<td class='general'> <strong>".number_format($totalGeneral, 2, ",", "&nbsp;")."&nbsp;€</strong></td>",
