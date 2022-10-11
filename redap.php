@@ -60,7 +60,6 @@
     <i></i>
     <i></i>
     
-    
   </div>
     <div id ="recapitulatif">
         <nav class="menu">
