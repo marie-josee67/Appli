@@ -411,7 +411,7 @@ body{
     z-index: 1;/* passe devant le numéro 0  */
     height: 100vh;
     width: 100vw;
-    color: #f1f1f1;
+    color: #f1f1f1; /* couleur des textes du panier */
     /*border: 5px solid rgb(218, 137, 32);*/
 }
 
@@ -419,10 +419,19 @@ body{
 .menu{
     width: 100vw;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     z-index: 3;
     /*border: 5px solid rgb(156, 33, 105);*/
 }
+
+/* Configuration du boutton liens Panier */
+.recapitulatif{
+  font-size: 40px;
+  background: transparent;
+  border: none;
+  margin:10px;
+}
+
 /* -----------------------------------Bouton Mode Sombre -------------------------- 
 
 .btn-toggle{
@@ -519,6 +528,13 @@ input:hover {
 /*  premet de mettre les noms de produits du coter gauche */
 .designation{
     text-align: left;
+}
+
+/* configuration du bouton liens Produits */
+.Produits{
+  font-size: 40px;
+  background: transparent;
+  border:none;/* pas de bordure au bouton */
 }
 
 /*---------------------------------------   Foreach   ------------------------------------ */

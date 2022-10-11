@@ -51,9 +51,8 @@
       </div>
     <div id="container">
         <nav class="menu">
-            <ul> <!-- liste d'éléments sans ordre particulier  -->
-                <li class="recapitulatif"><a href="redap.php">Panier</a></li> <!-- liens vers la page-->
-            </ul>
+             <!-- liste d'éléments sans ordre particulier (attribut booléen )-->
+                <button class="recapitulatif"><a href="redap.php"><span style="color:#FFFFFF;">Panier</span></a></button> <!-- liens vers la page avec la couleur intégrer directement dans le code car ne marche pas autrement pour le moment refuse la balise parent--> 
         </nav>
 
         <div class ="AjoutProduit">

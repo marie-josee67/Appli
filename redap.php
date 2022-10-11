@@ -64,10 +64,8 @@
   </div>
     <div id ="recapitulatif">
         <nav class="menu">
-                <ul> <!-- liste d'éléments sans ordre particulier  -->
-                    <li class="Produits"><a href="index.php">Produits</a></li> <!-- liens vers la page-->
-                </ul>
-            </nav>
+                    <button class="Produits"><a href="index.php"><span style="color:#FFFFFF;">Produits</span></a></button> <!-- liens vers la page-->
+        </nav>
         <?php
             /* Vérification du tableau qu'il contien bien des informations  =>  <?php var_dump($_SESSION); ?> */
 
@@ -79,7 +77,7 @@
             }
             else{ 
 
-                /* De la ligne 30 à la ligne 40, nous trouvons les balises HTML initialisant correctement un tableau HTML avec une ligne d'en-têtes <thead>, afin de bien décomposer les données de chaque produit. */
+                /* De la ligne 81 à la ligne 90, nous trouvons les balises HTML initialisant correctement un tableau HTML avec une ligne d'en-têtes <thead>, afin de bien décomposer les données de chaque produit. */
                 echo "<table id ='table'>",
                         "<thead>",
                             "<tr id ='tableau'>",
@@ -116,7 +114,7 @@
                             "<br>";$totalGeneral+= $product["total"];
                             
                         }
-                        /* Lignes 68 à 71 : Une fois la boucle terminée, nous affichons une dernière ligne avant de refermer notre tableau. Cette ligne contient deux cellules : une cellule fusionnée de 4 cellules (colspan=4) pour l'intitulé, et une cellule affichant le contenu formaté de $totalGeneral avec number_format(). */
+                        /* Lignes 118 à 121 : Une fois la boucle terminée, nous affichons une dernière ligne avant de refermer notre tableau. Cette ligne contient deux cellules : une cellule fusionnée de 4 cellules (colspan=4) pour l'intitulé, et une cellule affichant le contenu formaté de $totalGeneral avec number_format(). */
                         echo "<tr>",
                         "<td colspan=4>Total général : </td>",
                         "<td class='general'> <strong>".number_format($totalGeneral, 2, ",", "&nbsp;")."&nbsp;€</strong></td>",
@@ -126,7 +124,7 @@
                     /* bouton pour supprimer les produits du panier */
                     ?>
                     <div class ="boutonPanier">
-                        <a href= "traitement.php?action=deleteAll"><i class="fa-duotone fa-cauldron"></i> '<span style="color:#FFFFFF;">Vider le panier</span>'</a>;
+                        <a href= "traitement.php?action=deleteAll"><i class="fa-duotone fa-cauldron"></i> <span style="color:#FFFFFF;">Vider le panier</span></a>;
                     </div>
    </div>
 
