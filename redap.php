@@ -1,12 +1,13 @@
 <!--  Affichera tous les produits en session (et en détail) et présentera le total général de tous les produits ajoutés.-->
 
-
 <?php
     /* A la différence d'index.php, nous aurons besoin ici de parcourir le tableau de session, il est donc nécessaire d'appeler la fonction session_start() en début de fichier afin de récupérer, la session correspondante à l'utilisateur. */
     session_start();
      /*var_dump($_SESSION);
      div;  arrête le programme*/
 
+
+     
 ?>
 <!DOCTYPE html>
 <html lang="fr">

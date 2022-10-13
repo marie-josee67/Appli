@@ -1,7 +1,7 @@
 <!-- Traitement traitera la requête provenant de la page index.php (après soumission du formulaire), ajoutera le produit avec son nom, son prix, sa quantité et le total calculé (prix × quantité) en session.-->
 
-
 <?php
+
 
 session_start(); /* Cette fonction a deux utilités : démarrer une session sur le serveur pour l'utilisateur courant, ou récupérer la session de ce même utilisateur s'il en avait déjà une. */
 
