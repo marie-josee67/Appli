@@ -1,0 +1,3 @@
+tâche restant à faire:
+
+créer la fonction pour supprimer un seul élément du panier 

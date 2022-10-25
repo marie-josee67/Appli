@@ -4,7 +4,9 @@
 
 
 session_start(); /* Cette fonction a deux utilités : démarrer une session sur le serveur pour l'utilisateur courant, ou récupérer la session de ce même utilisateur s'il en avait déjà une. */
-
+$action = $_GET["action"];
+$id = $_GET["id"];
+$index = (isset($_GET["index"])) ? $_GET["index"] : "";
 /* Boucle qui permet de proteger le fichier */
 if (isset($_POST["submit"])) {
 
@@ -51,3 +53,10 @@ function delete_all(){
 }
 
     /*  bouton suppression d'un article du tableau */
+switch($action) {
+    case "supprimerUnProduit":
+        unset($_SESSION["products"][$index]);
+        header("Location:redap.php");
+ 
+    break;
+}

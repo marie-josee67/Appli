@@ -134,7 +134,7 @@
                             "<td class='quantiter'>".$product["qtt"]."</td>",
                             "<td class='total'>".number_format($product["total"], 2, ",", "&nbsp;")."&nbsp;€</td>", 
                             /* Bouton pour supprimer la ligne */
-                            "<td class='supprimer'><a href='redap.php?action=deleteAll'><span style ='color:#1c87c9;'><i class='fa-solid fa-trash-can-arrow-up'></i></span></a></td>", /* icon poubelle <i class='fa-solid fa-trash-can-arrow-up'></i> */
+                            "<td>"."<a href=traitement.php?action=supprimerUnProduit&index=$index><span style ='color: #ff0000;'<i class='fa-solid fa-xmark'></i></span></a>"."</td>";
                             "</tr>";
                             /* À l'intérieur de la boucle, grâce à l'opérateur combiné +=, on ajoute le total du produit parcouru à la valeur de $totalGeneral, qui augmente d'autant pour chaque produit. */
                             "<br>";$totalProduit+= $product["qtt"];

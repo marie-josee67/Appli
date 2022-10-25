@@ -541,5 +541,11 @@ input:hover {
    z-index: 5;
    font-size: 20px;
    color: #dc1717;
-   
+}
+/*Zébrage des lignes pair du tableau
+table tr:nth-child(even){
+    background-color: yellow;
+}*/
+.supprimerUnProduit:hover{
+  background-color: rgb(161, 15, 15);
 }
