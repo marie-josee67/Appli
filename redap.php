@@ -86,7 +86,7 @@
   </div>
     <div id ="recapitulatif">
         <nav class="menu">
-                    <button class="Produits"><a href="index.php"><span style="color:#FFFFFF;">Produits</span></a></button> <!-- liens vers la page-->
+                    <button class="Produits"><a href="index.php"><span style="color:#FFFFFF;"><i class="fa-sharp fa-solid fa-tags"></i></span></a></button> <!-- liens vers la page-->
         </nav>
         <?php
             /* Vérification du tableau qu'il contien bien des informations  =>  <?php var_dump($_SESSION); ?> */
@@ -134,7 +134,7 @@
                             "<td class='quantiter'>".$product["qtt"]."</td>",
                             "<td class='total'>".number_format($product["total"], 2, ",", "&nbsp;")."&nbsp;€</td>", 
                             /* Bouton pour supprimer la ligne */
-                            "<td>"."<a href=traitement.php?action=supprimerUnProduit&index=$index><span style ='color: #ff0000;'<i class='fa-solid fa-xmark'></i></span></a>"."</td>";
+                            "<td>"."<a href=traitement.php?action=supprimerUnProduit&index=$index><i class='fa-solid fa-xmark'></i></a>"."</td>";
                             "</tr>";
                             /* À l'intérieur de la boucle, grâce à l'opérateur combiné +=, on ajoute le total du produit parcouru à la valeur de $totalGeneral, qui augmente d'autant pour chaque produit. */
                             "<br>";$totalProduit+= $product["qtt"];
@@ -157,7 +157,7 @@
                     /* bouton pour supprimer  tous les produits du panier avec forcage de couleur*/
                     ?>
                     <div class ="boutonPanier">
-                        <a href= "traitement.php?action=deleteAll"><span style="color: #e6e6e6;"><i class="fa-solid fa-cart-shopping"></i>Vider le panier</span></a>
+                        <a href= "traitement.php?action=deleteAll"><span style="color: #e6e6e6;">Vider le panier</span></a>
                         <a href="traitement.php?action=SupprimerTous">
                     </div>
    </div>

@@ -66,11 +66,10 @@
     <div id="container">
         <nav class="menu">
             <!-- liens vers la page avec la couleur intégrer directement dans le code car ne marche pas autrement pour le moment refuse la balise parent--> 
-            <button class="recapitulatif"><a href="redap.php"><span style="color:#FFFFFF;">Panier</span></a></button>
+            <button class="recapitulatif"><a href="redap.php"><span style="color:#FFFFFF;"><i class="fa-solid fa-cart-shopping"></i></span></a></button>
             
         </nav>
         <div class ="AjoutProduit">
-            <h1>Ajouter un produit</h1>
             <form action="traitement.php" method="post">  <!-- action (qui indique la cible du formulaire, le fichier à atteindre lorsque l'utilisateur soumettra le formulaire) method (qui précise par quelle méthode HTTP les données du formulaire seront transmises au serveur) -->
                 <p>
                     <label>

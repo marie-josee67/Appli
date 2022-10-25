@@ -1,3 +1,7 @@
 tâche restant à faire:
 
-créer la fonction pour supprimer un seul élément du panier 
+créer la fonction pour supprimer un seul élément du panier => fait
+
+retirer le bouton vider le panier quand il n'y a pas d'article dans le panier
+
+mettre une icon panier à la place du texte idem pour produit  => fait
