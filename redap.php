@@ -132,16 +132,14 @@
                             /* La fonction PHP number_format() permet de modifier l'affichage d'une valeur numérique en précisant plusieurs paramètres. En ajoutant avant la fermeture de la balise <td> un symbole €, nos montants s'affichent en euro */
                             "<td class='prix'>".number_format($product["price"], 2, ",", "&nbsp;")."&nbsp;€</td>",
                             "<td class='quantiter'>".$product["qtt"]."</td>",
-                            "<td class='total'>".number_format($product["total"], 2, ",", "&nbsp;")."&nbsp;€</td>",
-                            "<td class='supprimer'><a href='redap.php?action=deleteAll'><i class='fa-solid fa-trash-can-arrow-up'></i></a></td>", /* icon poubelle <i class='fa-solid fa-trash-can-arrow-up'></i> */
+                            "<td class='total'>".number_format($product["total"], 2, ",", "&nbsp;")."&nbsp;€</td>", 
+                            /* Bouton pour supprimer la ligne */
+                            "<td class='supprimer'><a href='redap.php?action=deleteAll'><span style ='color:#1c87c9;'><i class='fa-solid fa-trash-can-arrow-up'></i></span></a></td>", /* icon poubelle <i class='fa-solid fa-trash-can-arrow-up'></i> */
                             "</tr>";
                             /* À l'intérieur de la boucle, grâce à l'opérateur combiné +=, on ajoute le total du produit parcouru à la valeur de $totalGeneral, qui augmente d'autant pour chaque produit. */
                             "<br>";$totalProduit+= $product["qtt"];
                             "<br>";$totalGeneral+= $product["total"];
-                            
                         }
-
-                        
                         /* code pour afficher le nombre de produits dans le tableau */
                         echo "<tr>",
                         "<td colspan=3>Total produits : </td>",
@@ -156,7 +154,7 @@
                         "</tr>",
                         "</thody>";
                     } 
-                    /* bouton pour supprimer les produits du panier avec forcage de couleur*/
+                    /* bouton pour supprimer  tous les produits du panier avec forcage de couleur*/
                     ?>
                     <div class ="boutonPanier">
                         <a href= "traitement.php?action=deleteAll"><span style="color: #e6e6e6;"><i class="fa-solid fa-cart-shopping"></i>Vider le panier</span></a>
