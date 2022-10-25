@@ -31,8 +31,9 @@
       th {
         padding: 10px;
         border: 2px solid #1c87c9;
-        background-color: #e5e5e5;
+        background-color: #f3f3f3;
         text-align: center;
+        z-index: 0; /* évite que les bulles passes sur le tableau */
       }
     </style>
 
@@ -155,10 +156,10 @@
                         "</tr>",
                         "</thody>";
                     } 
-                    /* bouton pour supprimer les produits du panier */
+                    /* bouton pour supprimer les produits du panier avec forcage de couleur*/
                     ?>
                     <div class ="boutonPanier">
-                        <a href= "traitement.php?action=deleteAll"><span style="color:#FFFFFF;"><i class="fa-solid fa-cart-shopping"></i>Vider le panier</span></a>
+                        <a href= "traitement.php?action=deleteAll"><span style="color: #e6e6e6;"><i class="fa-solid fa-cart-shopping"></i>Vider le panier</span></a>
                         <a href="traitement.php?action=SupprimerTous">
                     </div>
    </div>

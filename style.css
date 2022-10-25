@@ -462,10 +462,10 @@ input:hover {
     justify-content: center;
     align-items: center;
     /*border: 5px solid rgb(218, 137, 32);*/
-}
-
-/* class des balises HTML initialisant le tableau  */
-#table {
+  }
+  
+  /* class des balises HTML initialisant le tableau  */
+  #table {
     width: auto;
     height: fit-content; /* La plus grande des valeurs entre :La hauteur minimale intrinsèque. Et le minimum entre la hauteur intrinsèque préférrée et la hauteur disponible */
     max-width: 100vw;
