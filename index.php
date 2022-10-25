@@ -63,8 +63,6 @@
     </div>
 
 
-
-
     <div id="container">
         <nav class="menu">
             <!-- liens vers la page avec la couleur intégrer directement dans le code car ne marche pas autrement pour le moment refuse la balise parent--> 

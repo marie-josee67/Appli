@@ -4,35 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
-
-/*:root{
-
-     couleurs mode clair 
-    --clr-light: #f1f1f1;
-    --clr-dark: #ececec;
-    --clr-nav:  rgba(68, 117, 136, 0.548);
-
-    --clr-texte1:  #000000;;
-    --clr-texte2: #f1f1f1;
-
-    --clr-accent2: #3f1778;
-}
-
-body.dark{
-
-       couleurs mode sombre
-
-    --clr-light: #4d0019;
-    --clr-dark:  #330011;
-    --clr-nav: #18181f;
-
-    --clr-texte1: #f1f1f1;
-    --clr-texte2: #000000;
-
-    --clr-accent2: #420000;
-}*/
 /*--------------------------------------- fond d'écran ------------------------------*/
 body{
     margin: 0;
